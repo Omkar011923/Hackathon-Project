@@ -25,12 +25,21 @@ export default function Home() {
           </div>
           <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
             <ul>
-              <li><Link to={"/about"}>Overview</Link></li>
-              <li><Link to={"/about"}>About us</Link></li>
-              <li><Link to={"/about"}>Chat with Professional</Link></li>
-              <li><Link to={"/about"}>Meditation Support</Link></li>
-              <li><Link to={"/about"}>Get call assitance</Link></li>
-              <li><Link to={"/about"}>Notification</Link></li>
+              <li>
+                <Link to={"/overview"}>Overview</Link>
+              </li>
+              <li>
+                <Link to={"/chat"}>Chat with Professional</Link>
+              </li>
+              <li>
+                <Link to={"/about"}>Meditation Support</Link>
+              </li>
+              <li>
+                <Link to={"/about"}>Get call assitance</Link>
+              </li>
+              <li>
+                <Link to={"/about"}>Notification</Link>
+              </li>
             </ul>
           </div>
 
