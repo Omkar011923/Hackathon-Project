@@ -1,39 +1,14 @@
-import React, { useState } from "react";
+import React  from "react";
 import Button from "../../Components/Button/Button";
 import homeBg from "../../assets/Images/homepagebackground.mp4";
 import "./Home.css";
 import { Link } from "react-router-dom";
 
 export default function Home() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
-
   return (
     <div>
       <div className="home-section">
         <div className="overlay">
-          <div className="nav-logo">
-            <h1>CalmConnect</h1>
-            <div className="hamburger" id="hamburger" onClick={toggleSidebar}>
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-            </div>
-          </div>
-          <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
-            <ul>
-              <li><Link to={"/about"}>Overview</Link></li>
-              <li><Link to={"/about"}>About us</Link></li>
-              <li><Link to={"/about"}>Chat with Professional</Link></li>
-              <li><Link to={"/about"}>Meditation Support</Link></li>
-              <li><Link to={"/about"}>Get call assitance</Link></li>
-              <li><Link to={"/about"}>Notification</Link></li>
-            </ul>
-          </div>
-
           <video src={homeBg} autoPlay loop muted />
           <div className="content">
             <h4>

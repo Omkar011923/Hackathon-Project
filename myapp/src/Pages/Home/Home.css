@@ -23,27 +23,6 @@
       object-fit: cover;
     }
   
-    .nav-logo {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      position: absolute;
-      color: #fff;
-      top: 3%;
-      padding: 0 3%;
-      z-index: 200;
-    }
-  
-    .hamburger .bar {
-      width: 30px;
-      height: 3px;
-      border-radius: 10px;
-      background: #ebebee;
-      transition: 0.4s;
-      margin: 6px;
-    
-    }
-  
     .content {
       position: absolute;
       top: 50%;
