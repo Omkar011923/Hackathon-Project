@@ -42,18 +42,22 @@
   align-items: center;
   gap: 20px;
   text-align: justify;
-  padding: 0 40px;
+  padding: 30px 40px;
+}
+
+.about-content h1 {
+  font-size: 2rem;
 }
 
 .about-content h4 {
-  line-height: 1.8rem;
+  line-height: 1.9rem;
 }
 
 .why-choose-us {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 0 40px;
+  padding: 20px 40px;
 }
 
 .card {
@@ -62,6 +66,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.card h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .card i {

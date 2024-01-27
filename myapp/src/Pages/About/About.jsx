@@ -29,13 +29,13 @@ export default function About() {
         <div className="about-content">
           <h1>About CalmConnect</h1>
           <h4>
-            write something more ChatGPT Welcome to CalmConnect, where healing
-            and self-discovery converge in the digital realm. In a fast-paced
-            world, we understand the significance of mental well-being, and our
-            online chat therapy consultation platform is here to be your compass
-            towards tranquility. Embark on a journey of self-reflection with our
-            team of highly qualified Online Psychologists, Psychiatrists, Mental
-            Health Therapists, Counsellors, and Psychotherapists. Through the
+            Welcome to CalmConnect, where healing and self-discovery converge in
+            the digital realm. In a fast-paced world, we understand the
+            significance of mental well-being, and our online chat therapy
+            consultation platform is here to be your compass towards
+            tranquility. Embark on a journey of self-reflection with our team of
+            highly qualified Online Psychologists, Psychiatrists, Mental Health
+            Therapists, Counsellors, and Psychotherapists. Through the
             convenience of chat, phone, or video calls, we break down barriers
             to accessing the support you deserve. CalmConnect is not just a
             counseling service; it's a sanctuary for your mind and soul. Our
@@ -60,7 +60,7 @@ export default function About() {
               sx={{
                 paddingBottom: "10px",
                 fontSize: "80px",
-                color: "rgb(78,94,208)",
+                color: "#455eb5",
               }}
             />
             <h2>Quality Serivce</h2>
@@ -73,7 +73,7 @@ export default function About() {
               sx={{
                 paddingBottom: "10px",
                 fontSize: "80px",
-                color: "rgb(78,94,208)",
+                color: "#455eb5",
               }}
             />
             <h2>Best Online Therapy</h2>
@@ -86,7 +86,7 @@ export default function About() {
               sx={{
                 paddingBottom: "10px",
                 fontSize: "80px",
-                color: "rgb(78,94,208)",
+                color: "#455eb5",
               }}
             />
             <h2>Secure</h2>
