@@ -12,7 +12,8 @@ function App() {
       <Layout>
           <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="/about" element={<About/>} />
+            <Route path="/Overview" element={<About/>} />
+            {/* <Route path="/Chat" element={<ChatProfe/>} /> */}
             <Route path="/Meditation" element={<Meditation/>} />
             <Route path="/CallSupport" element={<CallAssist/>} />
             <Route path="/about" element={<About/>} />

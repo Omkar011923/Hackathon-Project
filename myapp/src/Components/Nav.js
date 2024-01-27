@@ -26,13 +26,11 @@ const Nav = () => {
       <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <Link to={"/about"}>Overview</Link>
+            <Link to={"/Overview"}>Overview</Link>
           </li>
+          
           <li>
-            <Link to={"/about"}>About us</Link>
-          </li>
-          <li>
-            <Link to={"/about"}>Chat with Professional</Link>
+            <Link to={"/Chat"}>Chat with Professional</Link>
           </li>
           <li>
             <Link to={"/Meditation"}>Meditation Support</Link>
