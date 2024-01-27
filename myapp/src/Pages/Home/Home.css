@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .home-section {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+  
+    .overlay {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+  
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .nav-logo {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      color: #fff;
+      top: 3%;
+      padding: 0 3%;
+      z-index: 200;
+    }
+  
+    .hamburger .bar {
+      width: 30px;
+      height: 3px;
+      border-radius: 10px;
+      background: #ebebee;
+      transition: 0.4s;
+      margin: 6px;
+    
+    }
+  
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      z-index: 1;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .sidebar {
+      width: 0;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: rgba(5, 5, 5, 0.5);
+      overflow-x: hidden;
+      transition: width 0.5s ease-in-out;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 100;
+    }
+  
+    .sidebar.open {
+      width: 40%; /* Set the desired width when the sidebar is open */
+    }
+  
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: start;
+    }
+  
+    .sidebar li {
+      padding: 20px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    .sidebar ul li:after {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 70%;
+      background-color: red;
+      transform: scale(0);
+      transform-origin: left;
+      transition: transform 0.5s ease;
+    }
+  
+    .sidebar ul li:hover::after {
+      transform: scaleX(1);
+    }
+  
+    .sidebar ul li:hover {
+      color: red;
+    }
+  
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      font-family: 'var(--primaryfont)';
+      font-size: 1.2rem;
+    }
+  }
+  

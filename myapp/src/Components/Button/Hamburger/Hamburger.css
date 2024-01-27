@@ -1,0 +1,70 @@
+.hamburger {
+    display: block;
+  }
+
+  .hamburger .bar {
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background: #ebebee;
+    transition: 0.4s;
+  }
+
+
+  
+  .sidebar {
+    width: 0px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(5, 5, 5, 0.5);
+    overflow-x: hidden;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 200;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar li {
+    padding: 20px;
+    color: var(--textcolor);
+  }
+
+  .sidebar ul li:after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 70%;
+    background-color: red;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+  }
+
+  .sidebar ul li:hover::after {
+    transform: scaleX(1);
+  }
+
+  .sidebar ul li :hover {
+    color: var(--redcolor);
+  }
+
+
+  .sidebar a {
+    color: var(--textcolor);
+    text-decoration: none;
+    font-family: var(--primaryfont);
+  }
+  
+    
+  
+  
