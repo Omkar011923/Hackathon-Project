@@ -55,14 +55,14 @@
     }
   
     .sidebar.open {
-      width: 40%; /* Set the desired width when the sidebar is open */
+      width: 100%; /* Set the desired width when the sidebar is open */
     }
   
     .sidebar ul {
       list-style: none;
       padding: 0;
       margin: 0;
-      text-align: start;
+      text-align: center;
     }
   
     .sidebar li {
@@ -75,8 +75,7 @@
       content: "";
       display: block;
       height: 5px;
-      width: 70%;
-      background-color: red;
+      border-bottom: 4px solid #455eb5;
       transform: scale(0);
       transform-origin: left;
       transition: transform 0.5s ease;

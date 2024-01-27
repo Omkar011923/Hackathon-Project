@@ -14,8 +14,7 @@ const CallAssist = () => {
       <div className="pt-5 pl-5 pr-5 w-full h-full flex justify-center items-center contact-content gap-2">
         <div className="contact-card flex items-center">
           <CallIcon sx={{ fontSize: "40px", color: "#455eb5" }} />
-          <h1>Get call 24x7 support from Professionals.</h1>
-          <h6>Call Us</h6>
+          <h1>Get 24x7 call support from Professionals.</h1>
         </div>
 
         <div className="contact-card flex items-center">

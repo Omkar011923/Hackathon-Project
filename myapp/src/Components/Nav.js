@@ -2,20 +2,22 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
-    const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
-    const toggleSidebar = () => {
-      setSidebarOpen(!sidebarOpen);
-    };
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
   return (
     <>
       <div className="nav-logo bg-transparent">
         <h1 className="text-3xl">
-          <span className="text-blue-600">
-            {" "}
-            <span className="font-extrabold text-4xl">C</span>alm
-          </span>
-          Connect
+          <Link to={"/"}>
+            <span className="text-blue-600">
+              {" "}
+              <span className="font-extrabold text-4xl">C</span>alm
+            </span>
+            Connect
+          </Link>
         </h1>
         <div className="hamburger" id="hamburger" onClick={toggleSidebar}>
           <div className="bar"></div>
@@ -26,20 +28,19 @@ const Nav = () => {
       <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <Link to={"/Overview"}>Overview</Link>
-          </li>
-          
-          <li>
-            <Link to={"/Chat"}>Chat with Professional</Link>
+            <Link to={"/"} onClick={toggleSidebar}>Home</Link>
           </li>
           <li>
-            <Link to={"/Meditation"}>Meditation Support</Link>
+            <Link to={"/Overview"} onClick={toggleSidebar}>Overview</Link>
           </li>
           <li>
-            <Link to={"/CallSupport"}>Get call assitance</Link>
+            <Link to={"/Meditation"} onClick={toggleSidebar}>Meditation Support</Link>
           </li>
           <li>
-            <Link to={"/about"}>Notification</Link>
+            <Link to={"/Chat"} onClick={toggleSidebar}>Chat with Professional</Link>
+          </li>
+          <li>
+            <Link to={"/CallSupport"} onClick={toggleSidebar}>Get call assitance</Link>
           </li>
         </ul>
       </div>
