@@ -11,7 +11,7 @@
     cursor: pointer;
     flex-shrink: 0;
     height: 3.5rem;
-    width: 12rem;
+    width: 11rem;
     font-size: 1rem;
     font-weight: 500;
     padding: 0 1.6rem;
@@ -19,6 +19,11 @@
     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
     transition: all 0.5s;
     touch-action: manipulation;
+  }
+
+  .button-37 i{
+    padding-left: 7px;
+    font-size: 1.1rem;
   }
   
   .button-37:hover {

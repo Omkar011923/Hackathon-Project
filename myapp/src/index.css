@@ -5,6 +5,11 @@
   font-family: "Mulish", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+ 
+}
+
 .nav-logo {
     background: transparent;
   width: 100%;

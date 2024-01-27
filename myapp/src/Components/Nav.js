@@ -12,9 +12,9 @@ const Nav = () => {
       <div className="nav-logo bg-transparent">
         <h1 className="text-3xl">
           <Link to={"/"}>
-            <span className="text-blue-600">
+            <span>
               {" "}
-              <span className="font-extrabold text-4xl">C</span>alm
+              <span className="font-bold text-4xl text-blue-600">C</span>alm
             </span>
             Connect
           </Link>

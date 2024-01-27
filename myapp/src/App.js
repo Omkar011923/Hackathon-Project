@@ -5,9 +5,11 @@ import "./index.css"
 import Layout from "./Layout";
 import Meditation from "./Pages/Meditation/Meditation";
 import CallAssist from "./Pages/CallAssist/CallAssist";
+import TopScrollAnimation from "./Common/TopScrollAnimation/TopScrollAnimation";
 function App() {
   return (
     <div className="App">
+      <TopScrollAnimation/>
      <Router>
       <Layout>
           <Routes>

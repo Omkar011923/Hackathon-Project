@@ -9,6 +9,7 @@ export default function About() {
   return (
     <>
       <section id="about-page">
+    
         <div className="about-container">
           <div className="about-us">
             <h1>
@@ -17,16 +18,18 @@ export default function About() {
             <h3>
               Get Connected with the Best Online Psychologist and Counsellor.
             </h3>
-            <h3>
+            <h3 style={{paddingBottom:"15px"}}>
               {" "}
               Most Trusted and Safe Online Counselling and Therapy Platform in
               India.
             </h3>
-            <Button />
+            <a href="#about_us">
+            <Button  heading="About Us" icon={<i class="fa-solid fa-arrow-down"></i>}/>
+            </a>
           </div>
         </div>
 
-        <div className="about-content">
+        <div className="about-content" id="about_us">
           <h1>About CalmConnect</h1>
           <h4>
             Welcome to CalmConnect, where healing and self-discovery converge in
